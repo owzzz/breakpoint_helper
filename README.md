@@ -20,3 +20,5 @@ To run a simple demo:
 ```javascript
  gulp
 ```
+
+open ```index.html``` in browser
