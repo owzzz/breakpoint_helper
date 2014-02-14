@@ -35,7 +35,7 @@ open ```index.html``` in browser
 
 
 ## Installing with Bower
-If you'd like to grab just the scss file without the demo folderthen you can use Bower.
+If you'd like to grab just the scss file without the demo folder then you can use Bower.
 
 ```javascript
  bower install breakpoint_helper 
