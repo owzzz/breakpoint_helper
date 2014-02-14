@@ -2,5 +2,22 @@
   "name": "breakpoint_helper",
   "version": "1.0.0",
   "main": "sass/breakpoint_helper.scss",
-  "ignore": "demo/"
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo"
+  ],
+  "homepage": "https://github.com/owzzz/breakpoint_helper",
+  "authors": [
+    "Owain Llewellyn <owain.llew@gmail.com>"
+  ],
+  "keywords": [
+    "breakpoints",
+    "responsive",
+    "helper"
+  ],
+  "license": "MIT"
 }
