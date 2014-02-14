@@ -1,0 +1,109 @@
+/* BreakPoint Variables
+ ******************************************/
+
+$BP-MOBILE-PORTRAIT  : 360px;
+$BP-MOBILE-LANDSCAPE : 640px;
+
+$BP-TABLET-PORTRAIT  : 800px;
+$BP-TABLET-LANDSCAPE : 1280px;
+
+$BP-DESKTOP-SMALL    : 1024px;
+$BP-DESKTOP-MEDIUM   : 1220px;
+$BP-DESKTOP-LARGE    : 1440px;
+
+/* Color Variables
+ ******************************************/
+$BASE_COLOUR         : #001E5F;
+$CONTRAST_COLOUR     : #FFF;
+
+/* Typography Variables
+ ******************************************/
+$FONT_FAMILY         : helvetica, arial, sans-serif;
+$FONT_SIZE           : 10px;
+
+
+/* Base Styles
+ ******************************************/
+body:before {
+
+    // Layout
+    position: fixed;
+    top: 0;
+    left: 0%;
+
+    // Content
+    background: $BASE_COLOUR;
+    content: "Base";
+    padding: 10px;
+
+    // Type
+    color: $CONTRAST_COLOUR;
+    font-family: $FONT_FAMILY;
+    font-size: $FONT_SIZE;
+    text-transform: uppercase;
+}
+
+/* Mixins
+  ******************************************************************************************************/
+
+@mixin display-breakpoint($text, $bgcolor, $contrastcolor, $contrast: 0%) {
+        content: "Breakpoint: " $text;
+        background: lighten($bgcolor, $contrast);
+        color: darken($contrastcolor, $contrast);
+}
+
+/* Mobile Media Query Based Stlying
+  ******************************************************************************************************/
+
+@media screen and (orientation:portrait) and (min-width: $BP-MOBILE-PORTRAIT) {
+    body:before {
+        @include display-breakpoint("Mobile Portrait", $BASE_COLOUR, $CONTRAST_COLOUR, 5%);
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width: $BP-MOBILE-LANDSCAPE) {
+    body:before {
+        @include display-breakpoint("Mobile Landscape", $BASE_COLOUR, $CONTRAST_COLOUR, 10%);
+    }
+}
+
+
+/* Tablet Media Query Based Stlying
+  ******************************************************************************************************/
+
+@media screen and (orientation:portrait) and (min-width: $BP-TABLET-PORTRAIT) {
+    body:before {
+        @include display-breakpoint("Tablet Portrait", $BASE_COLOUR, $CONTRAST_COLOUR, 15%);
+    }
+}
+
+
+@media screen and (orientation:landscape) and (min-width: $BP-TABLET-LANDSCAPE) {
+    body:before {
+        @include display-breakpoint("Tablet Landscape", $BASE_COLOUR, $CONTRAST_COLOUR, 20%);
+    }
+}
+
+/* Desktop Media Query Based Stlying
+  ******************************************************************************************************/
+
+@media screen and (min-width: $BP-DESKTOP-SMALL) {
+    body:before {
+        @include display-breakpoint("Desktop Small", $BASE_COLOUR, $CONTRAST_COLOUR, 25%);
+    }
+}
+
+@media screen and (min-width: $BP-DESKTOP-MEDIUM) {
+    body:before {
+        @include display-breakpoint("Desktop Medium", $BASE_COLOUR, $CONTRAST_COLOUR, 30%);
+    }
+}
+
+@media screen and (min-width: $BP-DESKTOP-LARGE) {
+    body:before {
+        @include display-breakpoint("Desktop Large", $BASE_COLOUR, $CONTRAST_COLOUR, 35%);
+    }
+
+}
+
+
