@@ -22,3 +22,6 @@ To run a simple demo:
 ```
 
 open ```index.html``` in browser
+
+## Roadmap
+* Add Bower support
