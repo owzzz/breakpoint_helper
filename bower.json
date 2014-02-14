@@ -1,0 +1,6 @@
+{
+  "name": "breakpoint_helper",
+  "version": "1.0.0",
+  "main": "sass/breakpoint_helper.scss",
+  "ignore": "demo/"
+}

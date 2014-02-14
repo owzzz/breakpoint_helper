@@ -1,0 +1,31 @@
+{
+  "name": "breakpoint_helper",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "Owain Llewellyn <owain.llew@gmail.com>",
+  "description": "Having a hard time knowing when styles are taking effect? Breakpoint helper is a useful and simple tool for displaying current breakpoints in the browser based on your sass breakpoint variables.",
+  "contributors": [],
+  "bin": {},
+  "scripts": {},
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owzzz/breakpoint_helper.git"
+  },
+  "keywords": [
+    "responsive",
+    "breakpoints",
+    "helper"
+  ],
+  "dependencies": {},
+  "analyze": false,
+  "devDependencies": {
+    "gulp-sass": "~0.7.0",
+    "gulp": "~3.5.2"
+  },
+  "bundledDependencies": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
